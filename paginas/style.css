@@ -1,0 +1,214 @@
+body {
+  background-color: #C4E4DB;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#tituloPag{
+  float: left;
+  margin-left: 20px;
+  font-size: 20pt;
+}
+
+#divApodo{
+  float: right;
+  margin-right: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn {
+  margin-bottom: 5px;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	letter-spacing: 1px;
+	outline: none;
+	border-radius: 5px;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+
+	background: #4c9da8;
+	color: #fff;
+	box-shadow: 0 6px #afe06f;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:hover {
+	box-shadow: 0 4px #afe06f;
+	top: 2px;
+}
+
+.btn:active {
+	box-shadow: 0 0 #afe06f;
+	top: 6px;
+}
+
+
+#cabecera {
+  background-color: #05386B;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  color:white;
+}
+
+#aleatorioBox{
+  border: solid #CDCDCD;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+#tituloPag:hover{
+  cursor: pointer;
+}
+
+#visitados{
+  display: block;
+  background-color: #DCAE1D;
+  padding: 10px;
+  overflow: hidden;
+}
+
+#buscar{
+  padding-left: 7px;
+  padding: 3px;
+}
+
+#aleatorioButton{
+  font-size: 12pt;
+  padding: 7px;
+}
+
+#topBox{
+  border: dashed #8E44AD;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#busqueda{
+  border: dashed #8E44AD;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#lista{
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid darkgrey;
+  visibility: hidden;
+  background-color: #acffe5;
+}
+
+#lista li {
+    padding: 8px 16px;
+    border-bottom: 1px solid darkgrey;
+}
+
+#lista li:last-child {
+    border-bottom: none
+}
+
+#topButton{
+  font-size: 12pt;
+  float: right;
+  padding: 7px;
+}
+
+#titleTop, #titleAle{
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14pt;
+}
+
+ .topImg, .recImg, .aleaImg{
+   width: 50px;
+   height: 50px;
+ }
+
+ .groImg{
+   width: 200px;
+ }
+
+#loading{
+  width: 50px;
+  display: none;
+}
+
+#cajaGrupo{
+  min-width: 300px;
+  width: 90vw;
+  text-align: justify;
+  font-size: 11pt;
+  float: left;
+  clear: both;
+  margin: 10px;
+}
+
+#cajaOtros{
+  float: left;
+  min-width: 574px;
+}
+
+#cajaAbajo{
+  float: left;
+  min-width: 500px;
+}
+
+#recomendados{
+  float: left;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+
+a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+	position:relative;
+  transition:0.5s color ease;
+	text-decoration:none;
+	color:#05386B;
+}
+a:hover{
+	color:#d73444;
+}
+a.link:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+  bottom:-0.25em;
+  height:5px;
+  height:0.35rem;
+  width:0;
+  background:#d73444;
+  left:0;
+}
+a.link:hover:after{
+  width:100%;
+}
+
+/*MAINPAGE*/

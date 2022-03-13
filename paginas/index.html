@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagina de recomendacion</title>
+  <base href="/">
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <script src="/script.js"></script>
+</head>
+
+<body onload="inicio();">
+  <!--MAINPAGE-->
+  <div id='cabecera'>
+    <p id ="tituloPag">Página de recomendación</p>
+
+    <div id="divApodo">
+
+      <p id="apodo">Ha iniciado sesión como: </p>
+      <button id="botonReset" class="btn" onclick="reset()">Empezar de nuevo</button>
+
+    </div>
+  </div>
+
+  <div id="visitados">
+
+    <p id="visi">Visitados: <span id="gruVisi"></span></p>
+
+  </div>
+
+  <div id="recomendados">
+    <p id="recomendadosP">Recomendados</p>
+    _Recomendados_
+  </div>
+
+
+  <div id="busqueda">
+    <input type="text" id="buscar" placeholder="Búsqueda de grupos" onkeyup="buscar()" size="30">
+
+    <div id="cajalista">
+      <ul id="lista">
+      </ul>
+
+    </div>
+  </div>
+
+  <div id="cajaAbajo">
+
+    <div id="aleatorioBox">
+      <p id="titleAle">Aleatorio:</p>
+
+      <div id="aleatorio">
+        _Aleatorio_
+      </div>
+
+      <img src="./datos/imagenes/loading.gif" alt="Loading" id="loading">
+
+      <button onClick="aleatorio()" class="btn" id="aleatorioButton">Más grupos aleatorios</button>
+
+    </div>
+
+    <div id="topBox">
+      <p id="titleTop">Top:</p>
+
+      <div id="top">
+        _Top_
+      </div>
+
+      <button onClick="topGrupos()" class="btn" id="topButton">Top Completo</button>
+    </div>
+  </div>
+</body></html>
